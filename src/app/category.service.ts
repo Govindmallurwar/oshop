@@ -14,9 +14,9 @@ export class CategoryService {
   {
     
   }
-  getCategory()
+  getAll()
   {
-    return this.db.list('/category',{query:{
+    return this.db.list('/categories',{query:{
       orderByChild:'name'
     }});
   }
